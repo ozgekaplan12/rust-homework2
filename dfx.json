@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "library0_backend": {
+      "candid": "src/library0_backend/library0_backend.did",
+      "package": "library0_backend",
+      "type": "rust"
+    },
+    "library0_frontend": {
+      "dependencies": [
+        "library0_backend"
+      ],
+      "source": [
+        "src/library0_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "library0_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
